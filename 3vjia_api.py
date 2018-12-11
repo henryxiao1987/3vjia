@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 from utils.qiniu_api import Qiniu
 
 qiniu = Qiniu()
-pg_client = PgClient(host="10.10.23.20")
+pg_client = PgClient(host="0.0.0.0")
 
 logging.setLoggerClass(CheloExtendedLogger)
 vjia_logger = logging.getLogger("3vjia_spider")
